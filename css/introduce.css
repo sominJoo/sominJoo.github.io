@@ -1,1 +1,11 @@
 /* 자기소개 page 관련 css 스타일 태그 모음 */
+div#content header nav ul li{
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+}
+
+div#content header nav ul li:not(:last-of-type)::after{
+    content: "|";
+    margin-left: 20px;
+}
