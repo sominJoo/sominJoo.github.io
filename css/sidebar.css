@@ -1,0 +1,93 @@
+
+/* menu버튼 */
+input[id="menuicon"]{
+    display: none;
+}
+
+input[id ="menuicon"]+label{
+    padding: auto;
+    float: right;
+    width: 2.5em;
+    height: 2em;
+    position: relative;
+    cursor: pointer;
+    margin-top: 1em;   
+    margin-right: 2em; 
+}
+
+input[id ="menuicon"]+label span{
+    display: block;
+    float: right;
+    width: 100%;
+    height: 0.6vh;
+    position: absolute;
+    border-radius: 30px;        /*둥근 레이아웃*/
+    /* background-color: white; */
+    transition: all .35s;
+}
+
+input[id ="menuicon"]+label span:nth-child(1){
+    top : 0;
+}
+input[id ="menuicon"]+label span:nth-child(2){
+    top : 50%;
+    transform: translateY(-50%);
+}
+input[id ="menuicon"]+label span:nth-child(3){
+    bottom: 0;
+}
+
+
+input[id ="menuicon"]:checked+label span:nth-child(1){
+    top : 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id ="menuicon"]:checked+label span:nth-child(2){
+    opacity: 0;
+}
+input[id ="menuicon"]:checked+label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+input[id="menuicon"]:checked + label {
+    /* 배치했을때 가장 위 */
+    z-index:5;
+}
+
+
+/* 사이드 메뉴바 */
+div[class="sidebar"]{
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    top: 0;
+    right: -220px;
+    z-index: 4;
+    transition: all .35s;
+    background-color: #18242e;
+}
+
+input[id="menuicon"]:checked + label +div[class="sidebar"]{
+    right: 0;
+}
+
+ul#menuList{
+    list-style: none;
+    /* 중앙정렬 */
+    top:30%;
+    transform:translate(0, 30%);
+    padding :0;
+    text-align: center;
+}
+
+ul#menuList li{
+    font-size: 110%;
+    color: white;
+    margin: 11vh auto;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -2,58 +2,25 @@
 body{
     width: 100vw;
     height: 100vh;
-    margin: 0;
     /* background: #141E30; */
     background: #09131b;
-
     overflow: hidden  ;
 }
 
-header{
-    background: transparent;
-}
-nav{
-    float: right;
-    margin:  0 auto;
-    background: transparent;
-
-}
-nav ul li{
-    background: transparent;
-    float :right;
-    list-style-type: none;
-    margin-left: 10px;
-}
-
-nav ul li img{
-    float :right;
-    padding-top: 1em;
-    padding-right: 2.5em;
-    padding-bottom: 0;
-    text-decoration: none;
-    /* color: black; */
-}
-
-nav ul li img:hover{
-    cursor: pointer;
-    color: gray;
-}
 div#wrapper{   
     position: relative;
-    height: 1000px;
     text-align:center;
 }
 
 div#wrapper h1{
     clear: both;
     position: absolute;
-    font-size: 500%;
+    font-size: 300%;
     display: inline;
     color: white;
 
     /* 중앙정렬 */
-    top:50%;
+    top:40%;
     left:50%;
     transform:translate(-50%, -50%)
 }
-
