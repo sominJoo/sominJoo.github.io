@@ -5,9 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobby</title>
-    <link rel="stylesheet" href="hobby.css">
+    <link rel="stylesheet" href="css/hobby.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <script src="js/jquery-1.9.1.min.js"></script>
 </head>
 <body>
-    
+    <input type="checkbox" id="menuicon">
+	<label for="menuicon">
+		<span style="background-color: #102231;"></span>
+		<span style="background-color: #102231;"></span>
+		<span style="background-color: #102231;"></span>
+	</label>
+
+	<div class="sidebar">
+		<ul id="menuList">
+			<li><a href="index.html">Home</a> </li>
+			<li><a href="introduce.html"> About Me</a> </li>
+			<li><a href="hobby.html"> Hobby</a> </li>
+			<li><a href="roadmap.html"> RoadMap </a></li>
+			<li><a href="login.html"> Login</a> </li>
+		</ul>
+	</div>
+
+
+    <div class="hobby-wrapper">
+        <div id="circle1" class="circle"></div>
+        <div id="circle2" class="circle"></div>
+        <div id="circle3" class="circle"></div>
+        <div id="circle4" class="circle"></div>
+        <div id="circle5" class="circle"></div>
+    </div>
+
+    <script src="js/hobby.js"></script>
 </body>
 </html>

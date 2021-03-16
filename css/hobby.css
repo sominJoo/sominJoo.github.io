@@ -1,1 +1,19 @@
 /* hobby.html에 관련된 css 태그 모음 */
+
+#menuicon + label{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 93%;
+}
+
+.hobby-wrapper{
+    height: 70vh;
+}
+
+.circle{
+    display: inline-block;
+    width: 150px;
+    height:  150px;
+    border-radius: 50%;
+    border : 1px solid black;
+}

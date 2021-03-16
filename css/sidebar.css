@@ -3,6 +3,10 @@
 input[id="menuicon"]{
     display: none;
 }
+.wrapper{
+    width: 2.5em;
+    height: 2em;
+}
 
 input[id ="menuicon"]+label{
     padding: auto;
@@ -75,8 +79,8 @@ input[id="menuicon"]:checked + label +div[class="sidebar"]{
 ul#menuList{
     list-style: none;
     /* 중앙정렬 */
-    top:30%;
-    transform:translate(0, 30%);
+    top:18%;
+    transform:translate(0, 18%);
     padding :0;
     text-align: center;
 }

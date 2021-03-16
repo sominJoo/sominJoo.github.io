@@ -2,7 +2,14 @@
 * { 
     margin:0; 
     padding:0; 
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Do Hyeon', sans-serif; */
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-weight: bold; */
+}
+.container h2{
+    margin: 0 30px;
+    text-shadow: 3px 3px 3px gray;
 }
 
 /* 고정 navgation bar */
@@ -66,6 +73,9 @@ header div ul li a{
 #section1 {
     height: 500px;
 }
+#section1 h2{
+    margin: 0 auto;
+}
 #section1 div ul{   
     list-style: none;
     width: 80%;
@@ -87,8 +97,8 @@ header div ul li a{
     border-radius: 50%;
 }
 #section1 ul li:first-child h2{ 
-    margin-top: 10vh;
-    margin-bottom: 2vh;
+    margin-top: 8vh;
+    margin-bottom: 1.5vh;
     color: whitesmoke;
     font-weight: bolder;
 }
@@ -156,7 +166,7 @@ header div ul li a{
 #section2 >div > h2{
     padding-left: 30px;
     text-shadow: 3px 3px 3px gray;
-    margin: 10vh auto;
+    margin: 8vh 30px;
 }
 .pie-chart {
     display: inline-block;
@@ -293,7 +303,7 @@ input[id ="closeicon"]+label span:nth-child(2){
 /* ABOUT ME content */
 #section3 .project_contents{
     float: left;
-    width: 650px;
+    width: 700px;
     /* margin: 2em 2em; */
     padding-right: 2em;
     font-size: 15px;
@@ -311,10 +321,7 @@ input[id ="closeicon"]+label span:nth-child(2){
 
 
 /* section4 */
-/* .container h2{
-    margin: 0 30px;
-    text-shadow: 3px 3px 3px gray;
-}
+/* 
 
 
 #section4 a{
