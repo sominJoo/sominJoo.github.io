@@ -67,16 +67,24 @@ function color1(i, classname,colorname){
   });
 }
 
+
+$('input[id="closeicon"] + label').click(function (e) {
+  $('#skills').css('visibility','hidden');
+});
+
+// $('#right, #left').click(function (e) {
+//    console.log(e.target);
+//     $(this).css("box-shadow"," 2px 2px 2px rgb(167, 165, 165)");
+//     $(this).css("box-shadow"," none");
+// })
+
+
 var slideIndex = 1;
 
 $("#web").click(function (e) {
   $('#skills').css('visibility','visible');
   console.log("click");
   showDivs(slideIndex);
-});
-
-$('input[id="closeicon"] + label').click(function (e) {
-  $('#skills').css('visibility','hidden');
 });
 
 function plusDivs(n) {
@@ -97,6 +105,10 @@ function showDivs(n) {
 }
 
 
+
+/**
+ * 메뉴 버튼 색 변경
+ */
 (function () {
   var cnt = 0;
   $('input[id ="menuicon"]').change(function (e) {

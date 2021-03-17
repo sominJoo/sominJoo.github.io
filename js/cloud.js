@@ -35,7 +35,7 @@ function init() {
     scene.add(blueLight);
 
     let loader = new THREE.TextureLoader();
-    loader.load("/img/smoke.png", function(texture){
+    loader.load("img/smoke.png", function(texture){
       //texture is loaded
         cloudGeo = new THREE.PlaneBufferGeometry(500,500);
         cloudMaterial = new THREE.MeshLambertMaterial({
@@ -58,7 +58,7 @@ function init() {
         }
     });
 
-    loader.load("/img/star.jpg", function(texture){
+    loader.load("img/star.jpg", function(texture){
         const textureEffect = new POSTPROCESSING.TextureEffect({
           blendFunction: POSTPROCESSING.BlendFunction.COLOR_DODGE,
           texture: texture
