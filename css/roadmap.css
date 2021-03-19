@@ -30,6 +30,12 @@ body{
     z-index: 2;
     /* transform: translateY(50%) rotate(-50deg); */
 }
+
+.road-wrap>img:first-child{
+    position: absolute;
+    width: 600px;
+
+}
 .circle{
     position: absolute;
     border-radius: 50%;
