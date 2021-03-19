@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="css/sidebar.css">
 
 	<script src="js/jquery-1.9.1.min.js"></script>
-	<script src="js/roadmap.js"></script>
+	<script src="js/jquery.easing.1.3.min.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1&family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <input type="checkbox" id="menuicon">
@@ -25,11 +27,121 @@
 			<li><a href="introduce.html"> About Me</a> </li>
 			<li><a href="hobby.html"> Hobby</a> </li>
 			<li><a href="roadmap.html"> RoadMap </a></li>
-			<li><a href="login.html"> Login</a> </li>
+			<li><a href="guest.html"> Guest</a> </li>
 		</ul>
+	</div>
+	
+	<div class="road-wrap">
+
+		<!-- <input type="button" value="start" id="start"> -->
+		<div class="road road1">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle1"> <img src="img/roadmap/desk.png" alt="" id="img-circle1"> </div>
+		</div>
+		<div class="road road2">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle2"> <img src="img/roadmap/id-card-1.png" alt="" id="img-circle2"></div>
+		</div>
+		<div class="road road3">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle3"> <img src="img/roadmap/growth.png" alt="" id="img-circle3"></div>
+		</div>
+		<div class="road road4">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle4"> <img src="img/roadmap/skills.png" alt="" id="img-circle4"></div>
+		</div>
+		<div class="road road5">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle5"> <img src="img/roadmap/worldwide.png" alt="" id="img-circle5"></div>
+		</div>
+		<div class="road road6">
+			<img src="img/road2.png" class="road-img">
+			<div class="circle circle6"> <img src="img/roadmap/success.png" alt="" id="img-circle6"></div>
+			
+			<div class="circle circle7"><img src="img/roadmap/hierarchical-structure.png" id="img-circle7"></div>
+		</div>
+		<img src="img/roadmap/mountain.png" alt="" id="mountain">
+		<img src="img/flag.png" alt="" id="flag">
+		<div class="contents-wrap">
+			<div class="roadDiv roadDiv1">
+				<h3>공부</h3>
+				<p>
+					<strong> 0. KH 정보교육원 수업</strong><br>
+					&nbsp;- 교육받고 있는 내용에 대해 복습하며 열심히 공부한다<br><br>
+					<strong> 1. Project로 경헙 쌓기!</strong> <br>
+					&nbsp;- 개발하고 싶은 시스템이나 어플리케이션, 사이트 등 여러 프로젝트를 통해 경험을 쌓아 역량을 높인다! <br><br>
+					<strong> 2. BLOG 운영</strong><br>
+					&nbsp;- 개발 관련 블로그를 운영하며 수업 때 배운 내용과 진행하는 프로젝트에 대한 정보를 올려 복습하도록 한다!
+				</p>
+			</div>
+			<div class="roadDiv roadDiv2">
+				<h3>취업</h3>
+				<p>
+					<strong> 1. KH 이수</strong><br>
+					&nbsp; - KH 정보교육원을 좋은 성적으로 이수하고, 공부한 것을 바탕으로 열심히 취업 준비를 한다<br><br>
+					<strong> 2. 개발자 취업</strong><br>
+					&nbsp; -프로젝트, 면접 준비, 코딩테스트, 컴퓨터 이론 등을 철저히 준비하여 취업한다!!
+				</p>
+			</div>
+			<div class="roadDiv roadDiv3">
+				<h3>실력향상</h3>
+				<p>
+					<strong> 1. 공부</strong> <br>
+					&nbsp; - 취업한 분야에 대해 깊게 공부하여 실력을 향상해 나갈것 이다. <br><br>
+					<strong> 2. 스터디모임</strong> <br>
+					&nbsp; - 공부를 게으르게 하지 않기 위해 스터디 모임에 주기적으로 나가 코드리뷰, 기술 발표 등 여러 활동을 할 것이다. <br><br>
+					<strong> 3. 해커톤</strong> <br>
+					&nbsp; - 해커톤 대회에 나가 입상하는 게 목표이다.
+				</p>
+			</div>
+			<div class="roadDiv roadDiv4">
+				<h3>기술</h3>
+				<p>
+					<strong> 1. AWS 공부</strong><br>
+					&nbsp; - 취업을 하고 나서도 공부를 계속하며, AWS 등 클라우드 시스템에 대해 깊게 공부하고 개인적으로 프로젝트를 진행해 볼 것이다 <br><br>
+					<strong> 2. Application, Python .. 공부</strong> <br>
+					&nbsp; - 프로젝트를 진행한 경험이 있는 언어와 기술에 대해, 복습 차원과 더욱더 깊게 알기 위하여 개인적으로 공부를 진행할 것이다. <br><br>
+					<strong> 3. 영어 공부</strong> <br>
+					&nbsp; - 회화 공부를 열심히 해 원어민과 대화를 나눌 수 있는 정도가 될 수 있도록 할 것이다.
+
+				</p>
+			</div>
+			<div class="roadDiv roadDiv5">
+				<h3>외국으로 이직</h3>
+				<p>
+					열심히 공부한 영어와 회사에 다니며 쌓았던 실력을 바탕으로 캐나다로 이직을 할 것 이다.
+				</p>
+			</div>
+			<div class="roadDiv roadDiv6">
+				<h3>성공</h3>
+				<p>
+					개발자로 연봉을 많이 받고 한국 기업으로 이직해올 것이다.
+				</p>
+			</div>
+			<div class="roadDiv roadDiv7">
+				<h3>목표달성</h3>
+				<p>
+					대기업 부서장 또는 CTO가 최종목표이다
+				</p>
+			</div>
+		</div>
+
+		
+		<!-- <div id="root">
+			<div class="container">
+				<div class="bear bear1" id="bearStart1"></div>
+				<div class="bear bear2" id="bearStart2"></div>
+				<div class="bear bear3" id="bearStart3"></div>
+				<div class="bear bear4" id="bearStart4"></div>
+				<div class="bear bear5" id="bearStart5"></div>
+				<div class="bear bear6" id="bearStart6"></div>
+				<div class="bear bear7" id="bearStart7"></div>
+			</div>
+		</div> -->
 	</div>
 
 
+	<script src="js/roadmap.js??v=<%=System.currentTimeMillis() %>"></script>
 
 </body>
 </html>

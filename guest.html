@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+    <link rel="stylesheet" href="css/guest.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <script src="js\jquery-3.6.0.js"></script>
+    <script src="js/three/build/three.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/postprocessing@6.21.1/build/postprocessing.min.js"></script>
+
+    <!-- font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gothic+A1&family=Noto+Sans+KR:wght@100;300;400&display=swap" rel="stylesheet">
+
+
+    <script>
+        if(window.localStorage){
+            console.log("당신은 web storage를 사용할 수 있습니다.")
+        }
+        else{
+            console.warn("당신은 web Storage를 사용할 수 없습니다. 최신 브라우져로 업데이터 하세요")
+        }
+    </script>
+
+</head>
+<body>
+    <div id="wrapper" style="background-color: transparent;">        
+        <input type="checkbox" id="menuicon">
+        <label for="menuicon">
+            <span style="background-color: whitesmoke;"></span>
+            <span style="background-color: whitesmoke;"></span>
+            <span style="background-color: whitesmoke;"></span>
+        </label>
+
+        <div class="sidebar">
+            <ul id="menuList">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="introduce.html"> About Me</a> </li>
+                <li><a href="hobby.html"> Hobby</a> </li>
+                <li><a href="roadmap.html"> RoadMap </a></li>
+                <li><a href="guest.html"> Guest</a> </li>
+            </ul>
+        </div>
+
+    </div>
+    
+    <form action="">
+        <fieldset id="loginField">
+            <!-- <legend>Login</legend> -->
+            <h2>Login</h2>
+            <div class="idForm">
+                <input type="text" class="id lId" placeholder="ID">
+            </div>
+
+            <div class="passForm">
+                <input type="password" class="pwd lPwd" placeholder="PW">
+            </div>
+
+            <button type="button" class="btn" id="loginBtn">
+                LOG IN
+            </button>
+
+            <hr>
+            <span id="singup" onclick="singupPage();">회원가입</span>
+
+        </fieldset>
+    </form>
+
+
+    <div id="gusetBook">
+        <h2>방명록</h2>
+        <form action="javascript:saveEntry();" name="entryForm">
+            <fieldset style="border : none; border-bottom: 2px solid black;">
+                <legend>작성</legend>
+                <table id="tbl-write">
+                    <tr>
+                        <th>이름</th>
+                        <td><input type="text" name="userName" id="userName"></td>
+                        <th>내용</th>
+                        <td><input type="text" name="userContent" id="userContent"></td>
+                        <td colspan="2" style="text-align: center;"><input type="submit" value="저장" ></td>
+                    </tr>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+
+        <table id="tbl-entry"></table>
+
+    </div>
+
+    <div id="signup">
+
+        <div>
+            <input type="checkbox" id="closeicon">
+            <label for="closeicon">
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <div>
+            <h2>SIGN UP</h2>
+            <div class="idForm">
+                <input type="text" class="id sId" placeholder="ID를 입력하세요">
+            </div>
+
+            <div class="passForm">
+                <input type="password" class="pwd sPwd" placeholder="PW를 입력하세요">
+            </div>
+
+            <button type="button" class="btn" id="signupBtn">
+                SIGN UP
+            </button>
+        </div>
+        
+    </div>
+    <script src="js/cloud.js"></script>
+    <script src="js/guest.js"></script>
+</body>
+</html>

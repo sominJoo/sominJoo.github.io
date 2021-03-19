@@ -41,6 +41,7 @@ div#wrapper{
 
 #loginField{    
     position: absolute;
+    z-index: 2;
     /* 중앙정렬 */
     top: 50%;
     left: 50%;
@@ -62,19 +63,19 @@ div#wrapper{
     margin: 30px;
 }
 
-#idForm{  
+.idForm{  
     border-bottom: 2px solid #adadad;
     margin: 30px;
     padding: 10px 10px;
 }
     
-#passForm{
+.passForm{
     border-bottom: 2px solid #adadad;
     margin: 30px;
     padding: 10px 10px;
 }
 
-#idInput {
+.id {
     width: 100%;
     border:none;
     outline:none;
@@ -84,7 +85,7 @@ div#wrapper{
     background: none;
 }
   
-#pwdInput {
+.pwd{
     width: 100%;
     border:none;
     outline:none;
@@ -141,4 +142,135 @@ hr{
 
 #singup:hover{
     box-shadow: 1px 1px 4px rgb(167, 166, 166);
+}
+
+
+
+/* 방명록 */
+#gusetBook{
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    width: 700px;
+    height: 600px;
+    
+    
+    /* 중앙정렬 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    border-radius: 3%;
+    box-shadow: 5px 5px 40px black;
+    background-color: rgb(233, 229, 229);
+}
+form[name=entryForm]{
+    height: 200px;
+}
+#tbl-write{
+    width: 550;
+    margin: 0 auto;
+    border-bottom: none;
+}
+#userName{
+    width: 100px;
+    margin-right: 20px;
+}
+
+#userContent{
+    width: 400px;
+    margin-right: 20px;
+}
+
+#tbl-entry{
+    /* vertical-align: top; */
+    /* height: 500px; */
+    width: 670px;
+    margin: 0 auto;
+}
+#tbl-entry td{
+    border-bottom: 1.2px solid black;
+}
+
+
+
+
+
+/* 회원가입 창 */
+#signup{
+    position: absolute;
+    z-index: 3;
+    visibility: hidden;
+    border: none;
+    width: 300px;
+    height: 400px;
+    
+    /* 중앙정렬 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    border-radius: 3%;
+    box-shadow: 5px 5px 40px black;
+    background-color: rgb(233, 229, 229);
+}
+
+
+
+#signupBtn{
+    transition: 0;
+}
+#signup>h2{
+    padding-left: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#signup>div:last-child{
+    width: 300px;
+    height: 300px;
+
+    position: absolute;
+    /* 중앙정렬 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+/* 회원가입 창 닫기 */
+input[type ="checkbox"]{
+    display: none;
+}
+
+input[type ="checkbox"]+label{
+    float: right;
+    width: 2.5em;
+    height: 2.5em;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1vh; 
+}
+
+input[type ="checkbox"]+label span{
+    float: right;
+    display: block;
+    width: 100%;
+    height: 0.6vh;
+    position: absolute;
+    border-radius: 30px;        
+    background-color: white;
+}
+
+input[id ="closeicon"]+label span:nth-child(1){
+    top : 50%;
+    transform: translateY(-50%) rotate(45deg);
+    box-shadow: 2px 2px 1px gray ;
+}
+input[id ="closeicon"]+label span:nth-child(2){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+    box-shadow: -2px 2px 1px gray ;
 }

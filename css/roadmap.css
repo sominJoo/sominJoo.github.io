@@ -1,1 +1,218 @@
 /* 개발자 roadmap 관련 css 스타일 태그 모음 */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+#menuicon + label{
+    position: fixed;
+    margin-top: 20px;
+    margin-left: 93%; 
+    z-index: 10;
+}
+
+.road-wrap{
+    position: relative;
+    margin: 0 auto;
+    padding: 20px;
+    width: 900px;
+    height: 700px;
+}
+
+.road{
+    position: relative;
+    display: inline-block;
+    width:  60px;
+    height: 175px;
+    z-index: 2;
+    /* transform: translateY(50%) rotate(-50deg); */
+}
+.circle{
+    position: absolute;
+    border-radius: 50%;
+
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.circle >img{
+    width: 60px;
+}
+
+#mountain{
+    position: absolute;
+    top: -10%;
+    left: -55%;
+    z-index: 1;
+}
+
+.road-img{
+    position: absolute;
+    background-color: white;
+    width: 35px;
+    height: 120px;
+    top: 40px;
+    margin: 10px;
+    /* transform: translateY(50%) rotate(-50deg); */
+}
+
+/* road div 위치, 각도 변경 */
+.road1{
+    transform: translateY(50%) rotate(-119deg);
+    top: 67%;
+    left: 7%;
+}
+.circle1 >img{
+    transform: rotate(119deg);
+}
+
+
+
+/* road div 위치, 각도 변경 */
+.road2{
+    transform: translateY(50%) rotate(-140deg);
+    top: 54%;
+    left: 13%;
+}
+.circle2 >img{
+    transform: rotate(140deg);
+}
+
+/* road div 위치, 각도 변경 */
+.road3{
+    transform: translateY(50%) rotate(-140deg);
+    top: 37%;
+    left: 17%;
+}
+.circle3 >img{
+    transform: rotate(140deg);
+}
+
+
+/* road div 위치, 각도 변경 */
+.road4{
+    transform: translateY(50%) rotate(-111deg);
+    top: 23%;
+    left: 23%;
+}
+.circle4 >img{
+    transform: rotate(111deg);
+}
+
+/* road div 위치, 각도 변경 */
+.road5{
+    transform: translateY(50%) rotate(-140deg);
+    top: 11%;
+    left: 30%;
+}
+.circle5 >img{
+    transform: rotate(140deg);
+}
+
+/* road div 위치, 각도 변경 */
+.road6{
+    transform: translateY(50%) rotate(-90deg);
+    top: 1%;
+    left: 37%;
+}
+.circle6 >img{
+    transform: rotate(90deg);
+}
+
+.circle7{
+    position: relative;
+    transform: translateY(50%) rotate(0deg);
+    top: 132px;
+    left: 0%;
+}
+.circle7 >img{
+    position: absolute;
+    display: block;
+    transform:rotate(90deg);
+}
+
+
+#flag{
+    position: absolute;
+    z-index: 3;
+    top:4%;
+    left: 96.5%;
+    
+    /* 좌우반전 */
+    transform: scaleX(-1);
+}
+#start{
+    position: absolute;
+    z-index: 6;
+}
+
+
+/* contents */
+.contents-wrap{
+    position: absolute;
+    /* visibility: hidden; */
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 60%;
+    z-index: 3;
+    
+}
+
+.contents-wrap>div{
+    margin: 0 auto;
+    display: none;
+}
+/* 곰돌이 */
+/* #root{
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 136px;
+}
+
+.container{
+    width: 100%;
+}
+
+.bear{
+    position: absolute;
+    display: inline-block;
+    width: 75px;
+    height: 136px;
+    background : url("/img/roadmap/bear-sprite.png") 0 0 no-repeat;
+}
+.bear1{
+    top: 247%;
+    left: 2%;
+}
+
+.walking1{
+    animation: walk1 2s steps(6) normal,
+                forward 2s  linear normal;
+    /* 한번 실행 후 해당 자리에 고정 
+        transform: translate(130px, -70px);
+}
+
+/* 고정
+@keyframes walk1{
+    from{
+        background-position: 0;
+    }
+    to{
+        background-position: -468px;
+    }
+}
+
+/* 위치 변동 
+@keyframes forward{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform: translate(100px, -70px);
+    }
+} */
