@@ -2,9 +2,13 @@
 html,body{
     width: 100%;
     height: 100%;
+    max-width: 100%;
     /* background: #141E30; */
     background: #09131b;
     overflow: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 div#wrapper{   
@@ -21,13 +25,14 @@ h1{
     /* 중앙정렬 */
     top:40%;
     left:50%;
-    transform:translate(-50%, -50%)
+    transform:translate(-50%, -50%);
 }
 #btn1{
+    position: absolute;
     border: black;
 
     /* 중앙정렬 */
     top:40%;
     left:50%;
-    transform:translate(-50%, -50%)
+    transform:translate(-50%, -50%);
 }

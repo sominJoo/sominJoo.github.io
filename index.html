@@ -9,20 +9,8 @@
     <link rel="stylesheet" href="css/sidebar.css">
     
     <script type="text/javascript" src="js/three.js"></script>
-    <script>
-        if(window.localStorage){
-            console.log("당신은 web storage를 사용할 수 있습니다.")
-        }
-        else{
-            console.warn("당신은 web Storage를 사용할 수 없습니다. 최신 브라우져로 업데이터 하세요")
-        }
-
-        $(function () {
-            showEntries();
-        })();
-    </script>
 </head>
-<body onload="init();">
+<body>
 
     <div id="wrapper">        
         <input type="checkbox" id="menuicon">
@@ -41,8 +29,9 @@
                 <li><a href="guest.html"> Guest</a> </li>
             </ul>
         </div>
-        <h1>JOO SO MIN</h1>
     </div>
+    <h1>JOO SO MIN</h1>
+    <button type="button" id="btn1">ABOUT ME</button>
 
     <script type="text/javascript" src="js/index.js"></script>
 
